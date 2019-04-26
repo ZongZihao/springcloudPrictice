@@ -32,7 +32,7 @@ public class ProductViewServiceFeignApplication {
         //判断 rabbitMQ 是否启动
         int rabbitMQPort = 5672;
         if(NetUtil.isUsableLocalPort(rabbitMQPort)){
-            System.err.printf("未在端口%d 发现 rabbitMQ服务, 请检查", rabbitMQPort);
+            System.err.printf("未在端口%d 发现 rabbitMQ 服务, 请检查", rabbitMQPort);
             System.exit(1);
         }
 
