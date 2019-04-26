@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.how2j.springcloud.mapper.CustomerMapper">
+
+    <select id="findAll" resultType="Customer">
+        select * from mjym_base_customer
+    </select>
+
+    <select id="selectById" resultType="Customer">
+        select * from mjym_base_customer where customer_id = #{id}
+    </select>
+
+</mapper>
